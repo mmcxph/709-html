@@ -1,44 +1,60 @@
 <!DOCTYPE html>
+<!-- css 
+    font-family: 'Roboto', sans-serif; 
+    font-family: 'Merriweather', serif;-->
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carpatians Mountains</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <title>Ukrainian Carpathians</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon-mountain--32.png">
 </head>
 
-<body>
-    <header style="background-color: lightgrey">
-        <br>
-        <table align="center">
-            <tr>
-                <td>
-                    <img width=70 src="img/pngegg.png" alt="logo">
-                </td>
-                <td>
-                    <h1 style="color:#7d1052; text-align: center">Ukrainian Carpathians</h1>
-                </td>
-            </tr>
-        </table>
-        <br>
-    </header>
-    <article style="background-color: #eff6f6">
-        <br>
-        <table align="center">
-            <tr>
-                <td>
-                    <img width=600 height="400" src="img/red-carpatian-mountains.jpg" alt="Red Carpatian Mountains"
-                        title="Red Carpatian Mountains">
 
-                </td>
-                <td>
-                    <img width=600 height="400" src="img/MilkyWay_over_Shpizi.jpg" alt="MilkyWay_over_Shpizi"
-                        title="Shpizi Mountains">
-                </td>
-            </tr>
-        </table>
-        <h2>Where is it</h2>
+
+<body>
+
+    <header id="header">
+        <div class="heading">
+            <div>
+                <img id="header-img" width=70 src="img/logo-mountains.png" alt="logo">
+            </div>
+            <div>
+                <h1>Ukrainian Carpathians</h1>
+            </div>
+            <div class="navbar">
+                <a href="#watch">Watch video</a>
+                <a href="#where">Where is it</a>
+                <a href="#how">hoW it dividing</a>
+                <a href="#where">Where is it</a>
+                <a href="#write">Write us</a>
+            </div>
+        </div>
+    </header>
+    <!-- <span class="w">W</span> -->
+    <main class="main">
+        <div id="watch">
+            <video id="video" controls poster="img/red-carpathians.jpg">
+                <source src="video/magical-carpatians.mp4" type="video/mp4">
+            </video>
+        </div>
+   
+        <h2 id="where"><span class="w">W</span>here is it</h2>
         <p><strong>Ukrainian Carpathians</strong> <em>(Ukrainian: Українські Карпати)</em> are a section of the Eastern
             Carpathians, within the borders of modern Ukraine. They are located in the southwestern corner of Western
             Ukraine, within administrative territories of four Ukrainian regions (oblasts), covering northeastern part
@@ -50,7 +66,10 @@
             belonging to the
             <strong>Outer Eastern Carpathians</strong> and minor part to the <strong>Inner Eastern Carpathians</strong>.
         </p>
-        <h2>How it dividing</h2>
+        <img width=640 height="360" src="img/milkyway-over-shpizi.jpg" alt="MilkyWay over Shpizi Mountain"
+        title="Shpizi Mountain">
+        
+        <h2 id="how">ho<span class="w">W</span> it dividing</h2>
         <p>Within different regional and national traditions, there are several overlapping <strong>variants of
                 divisions</strong> and
             designations for various Eastern Carpathian mountain ranges. Within the wider scope of the Ukrainian
@@ -68,9 +87,9 @@
                 <li>Makovytsia (UA: Маковиця)</li>
                 <li>Velikyi Dil (UA: Великий Діл)</li>
                 <li>Tupyi (UA: Тупий)</li>
-                <li> Oaș Mountains (UA: Оаш гори) in Ukraine and Romania </li>
-                <li> Maramureș Lowland (UA: Мармароська улоговина) in Ukraine and Romania </li>
-                <li> Maramureș Mountains (UA: Мармароський масив) in Ukraine and Romania </li>
+                <li>Oaș Mountains (UA: Оаш гори) in Ukraine and Romania </li>
+                <li>Maramureș Lowland (UA: Мармароська улоговина) in Ukraine and Romania </li>
+                <li>Maramureș Mountains (UA: Мармароський масив) in Ukraine and Romania </li>
             </ul>
             <br>
             <li>Section of the Outer Eastern Carpathians, within Ukraine:</li>
@@ -97,43 +116,56 @@
             </ul>
         </ul>
         <br>
-    </article>
+        </div>
 
-    <table align="center">
-        <tr>
-            <td>
-                <h3>Write a message for Chugaister</h3>
+        <table align="center">
+            <tr>
+                <td>
+                    <h3 id="write"><span class="w">W</span>rite a message for Chugaister</h3>
 
-                <form>
-                    <label for="name">Your name:</label>
-                    <input type="text" id="name" placeholder="Mavka">
-                    <br>
-                    <br>
-                    <label for="phone"> Your phone:</label>
-                    <input type="text" id="phone" placeholder="+380000000000">
-                    <br>
-                    <br>
-                    <label for="mess"> Write here:</label>
-                    <textarea id="mess"> </textarea>
-                    <br>
-                    <br>
-                    <input type="Submit" value="Let it fly!">
-                </form>
-            </td>
-            <td>
-                <img width=200 src="img/chugaister.png" alt="chugaister" title="chugaister">
-            </td>
-        </tr>
-    </table>
-    <!-- <aside>
-        From Wikipedia, the free encyclopedia blablabla</p>
-    </aside> -->
+                    <form id="form" action="https://www.freecodecamp.com/email-submit">
+                        <label for="name">Your name:</label>
+                        <input type="text" id="name" placeholder="Mavka" required>
+                        <br>
+                        <br>
+                        <label for="phone"> Your phone:</label>
+                        <input type="text" id="phone" placeholder="+380000000000"><br><br>
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" placeholder="mavka@carpat-mail.com" required>
+                        <br>
+                        <br>
+                        <label for="mess"> Write here:</label>
+                        <textarea id="mess"> </textarea>
+                        <br>
+                        <br>
+                        <input type="Submit" id="submit" value="Let it fly!">
+                    </form>
+                </td>
+                <td>
+                    <img width=200 src="img/chugaister.png" alt="chugaister" title="chugaister">
+                </td>
+            </tr>
+        </table>
+
+    </main>
     <footer style="background-color: #e2d7d7;">
         <br>
         <p style="text-align: right"> From <a href="https://en.wikipedia.org/wiki/Ukrainian_Carpathians">Wikipedia</a>,
             the free encyclopedia</p>
         <br>
     </footer>
+
+    <!-- <script>
+        function myFunction() {
+            var x = document.getElementById("nav-bar");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script> -->
+
 </body>
 
 </html>
